@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Fragment.Fragment_PlayList">
+
+    <TextView
+        android:id="@+id/tvplaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="PlayList"
+        android:textColor="#000"
+        android:textSize="30sp" />
+
+    <ListView
+        android:layout_below="@id/tvplaylist"
+        android:id="@+id/lvplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+    <TextView
+        android:text="Xem thêm"
+        android:textSize="19sp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/iconmoreplaylist"
+        android:id="@+id/tvmoreplay"
+        android:layout_below="@id/lvplaylist"
+        android:background="#c9c7c7"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#0a0a0a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
